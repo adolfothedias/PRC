@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <head>
+      <title>PRC2019-A82324-T1</title>
+      <meta charset="UTF-8"></meta>
+      <style>
+         body{
+         background-color:#e6ffff;
+         }
+         div{
+         border-top: solid black;
+         margin : 10px;
+         }
+         table {
+         border-collapse: collapse;
+         }
+         
+         table, th, td {
+         border: 1px solid black;
+         }
+         th,td{
+         padding: 5px;
+         }
+         
+      </style>
+   </head>
+</html>
+<body>
+   
+   <div>
+      <h1>PRC2019-A82324-T1</h1>
+      <h2>Povoamento da Ontologia acerca das cadeiras de PRI e GCS</h2>
+      <h2></h2>
+      <h3>Início:03-02-2020 Fim:10-02-2020</h3>
+      <table>
+         <tr>
+            <th>Nome do Supervisor:</th>
+            <td>José Carlos Leite Ramalho</td>
+         </tr>
+         <tr>
+            <th>Email:</th>
+            <td>jcr@di.uminho.pt</td>
+         </tr>
+         <tr>
+            <th>Homepage:</th>
+            <td>
+               <a href="http://www4.di.uminho.pt/~jcr/">http://www4.di.uminho.pt/~jcr/</a>
+            </td>
+         </tr>
+      </table>
+   </div>
+   
+   <div>
+      <h2>Workteam:</h2>
+      
+      <div>
+         <p>
+            <b>Identificação:</b>A82324
+         </p>
+         <p>
+            <b>Nome:</b>Carlos Miguel Lopes Sá Barbosa
+         </p>
+         <p>
+            <b>Email:</b>a82324@alunos.uminho.pt
+         </p>
+         <img src="photo.png" width="10%"></img>
+      </div>
+      
+   </div>
+   
+   <div>
+      <h2>Abstract:</h2>
+      
+      <p>Este TPC tem como objetivo fazer o povoamento da ontologia feita na última aula.</p>
+      	   
+      <p>Primeiro, fez-se download da pauta de PRI, onde se assumiu que todos os alunos que
+         estiveram em PRI, também estiveram em GCS. Esse ficheiro está no formato .csv (grades.csv).
+      </p>
+      	   
+      <p>Do ficheiro .csv só é necessário o número e o nome (o email vai ser feito com o seguinte
+         formato 
+         <b>(número do aluno)@email.com</b>).
+      </p>
+      
+      <p>De seguida, com o ficheiro csvgen.py (dando como input o nome do curso), criou-se
+         um ficheiro xml com a informação dos docentes, dos alunos e das cadeiras leccionadas
+         (MIEI.xml)
+      </p>
+      
+      <p>Por fim, com o alunos.xsl, converteu-se o xml para formato ttl (alunos.ttl), para
+         depois poder fazer o povoamento dentro do template preparado para a situação(template.ttl).
+      </p>
+      
+      <p>O resultado final pode ser visto no ficheiro ontologia.ttl, bem como ser usado.</p>
+      
+   </div>
+   
+   <div>
+      <h2>Deliverables:</h2>
+      <ul>
+         
+         <li>
+            <a href="grades.csv">grades.csv</a>
+         </li>
+         
+         <li>
+            <a href="csvgen.py">csvgen.py</a>
+         </li>
+         
+         <li>
+            <a href="MIEI.xml">MIEI.xml</a>
+         </li>
+         
+         <li>
+            <a href="alunos.xsl">alunos.xsl</a>
+         </li>
+         
+         <li>
+            <a href="alunos.ttl">alunos.ttl</a>
+         </li>
+         
+         <li>
+            <a href="template.ttl">template.ttl</a>
+         </li>
+         
+         <li>
+            <a href="ontologia.ttl">ontologia.ttl</a>
+         </li>
+         
+      </ul>
+   </div>
+   
+</body>

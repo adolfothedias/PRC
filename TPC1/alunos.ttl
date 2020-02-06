@@ -1,0 +1,250 @@
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#jcr>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#lecciona> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "jcr@email.com@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "José Carlos Leite Ramalho"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#prh>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#lecciona> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "prh@email.com@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Pedro Manuel Rangel Santos Henriques"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A81712>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A81712@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A81712"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Ana Filipa Pereira"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A71385>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A71385@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A71385"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Bruno Silva"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A78997>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A78997@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A78997"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Bruno Sousa"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A82324>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A82324@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A82324"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Carlos Barbosa"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PG37149>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "PG37149@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "PG37149"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Diego Silva"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A75536>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A75536@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A75536"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Eduardo Araújo"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A71940>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A71940@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A71940"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Eduardo Cunha"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A70922>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A70922@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A70922"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Francisco Costa"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PG38415>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "PG38415@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "PG38415"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Henrique Ribeiro"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A80757>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A80757@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A80757"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Jaime Leite"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PG33874>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "PG33874@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "PG33874"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "João Grenhas"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A75569>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A75569@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A75569"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "João Leal"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A80874>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A80874@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A80874"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "João Pimentel"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A76516>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A76516@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A76516"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "João Vieira"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A80424>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A80424@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A80424"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "José Carvalho"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A63129>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A63129@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A63129"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "José Freitas"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A72187>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A72187@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A72187"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "José Lima"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A74036>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A74036@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A74036"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Manuel Monteiro"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A67713>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A67713@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A67713"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Manuel Moreno"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PG39292>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "PG39292@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "PG39292"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Maria Pinto"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PG41089>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "PG41089@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "PG41089"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Miguel Dias"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PG17918>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "PG17918@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "PG17918"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Paulo Martins"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A33524>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A33524@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A33524"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Pedro Paes"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A74264>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A74264@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A74264"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Rafael Silva"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A74568>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A74568@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A74568"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Ricardo Canela"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A75411>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A75411@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A75411"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Ricardo Leal"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A78914>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A78914@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A78914"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Ricardo Martins"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A78764>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A78764@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A78764"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Ricardo Neves"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A77045>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A77045@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A77045"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Ricardo Pereira"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A79947>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A79947@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A79947"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Rui Costa"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A74658>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A74658@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A74658"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Rui Vieira"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A82617>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A82617@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A82617"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Shahzod Yusupov"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A75328>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A75328@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A75328"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Tiago Baptista"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#A61032>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#frequenta> <http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#curso> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#email> "A61032@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#ident> "A61032"^^xsd:string ;
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#nome> "Tiago Pereira"^^xsd:string .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#GCS> rdf:type owl:NamedIndividual ,<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#UC> .
+<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#PRI> rdf:type owl:NamedIndividual ,<http://www.semanticweb.org/carlos/ontologies/2020/salaAula#UC> .

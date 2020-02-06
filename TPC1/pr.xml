@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRC2019-A82324-T1</keyname>
+        <title>Povoamento da Ontologia acerca das cadeiras de PRI e GCS</title>
+        <bdate>03-02-2020</bdate>
+        <edate>10-02-2020</edate>
+        <supervisor>
+            <name>José Carlos Leite Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A82324</identifier>
+            <name>Carlos Miguel Lopes Sá Barbosa</name>
+            <email>a82324@alunos.uminho.pt</email>
+            <photo path="photo.png"/>
+        </member>
+    </workteam>
+    <abstract>
+       <p>Este TPC tem como objetivo fazer o povoamento da ontologia feita na última aula.</p>
+	   <p>Primeiro, fez-se download da pauta de PRI, onde se assumiu que todos os alunos que estiveram em PRI, também estiveram em GCS. Esse ficheiro está no formato .csv (grades.csv).</p>
+	   <p>Do ficheiro .csv só é necessário o número e o nome (o email vai ser feito com o seguinte formato <b>(número do aluno)@email.com</b>).</p>
+       <p>De seguida, com o ficheiro csvgen.py (dando como input o nome do curso), criou-se um ficheiro xml com a informação dos docentes, dos alunos e das cadeiras leccionadas (MIEI.xml)</p>
+       <p>Por fim, com o alunos.xsl, converteu-se o xml para formato ttl (alunos.ttl), para depois poder fazer o povoamento dentro do template preparado para a situação(template.ttl).</p>
+       <p>O resultado final pode ser visto no ficheiro ontologia.ttl, bem como ser usado.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="grades.csv">grades.csv</deliverable>
+        <deliverable path="csvgen.py">csvgen.py</deliverable>
+        <deliverable path="MIEI.xml">MIEI.xml</deliverable>
+        <deliverable path="alunos.xsl">alunos.xsl</deliverable>
+        <deliverable path="alunos.ttl">alunos.ttl</deliverable>
+        <deliverable path="template.ttl">template.ttl</deliverable>
+        <deliverable path="ontologia.ttl">ontologia.ttl</deliverable>
+    </deliverables>
+</pr>

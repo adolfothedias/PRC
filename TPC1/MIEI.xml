@@ -1,0 +1,290 @@
+<turma curso="MIEI">
+<docentes>
+	<docente id="jcr">
+		<nome>José Carlos Leite Ramalho</nome>
+		<email>jcr@email.com</email>
+		<cadeira>PRI</cadeira>
+	</docente>
+	<docente id="prh">
+		<nome>Pedro Manuel Rangel Santos Henriques</nome>
+		<email>prh@email.com</email>
+	<cadeira>GCS</cadeira>
+</docente>
+</docentes>
+	<aluno>
+    	<numero>A81712</numero>
+    	<nome>Ana Filipa Pereira</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A71385</numero>
+    	<nome>Bruno Silva</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A78997</numero>
+    	<nome>Bruno Sousa</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A82324</numero>
+    	<nome>Carlos Barbosa</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>PG37149</numero>
+    	<nome>Diego Silva</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A75536</numero>
+    	<nome>Eduardo Araújo</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A71940</numero>
+    	<nome>Eduardo Cunha</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A70922</numero>
+    	<nome>Francisco Costa</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>PG38415</numero>
+    	<nome>Henrique Ribeiro</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A80757</numero>
+    	<nome>Jaime Leite</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>PG33874</numero>
+    	<nome>João Grenhas</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A75569</numero>
+    	<nome>João Leal</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A80874</numero>
+    	<nome>João Pimentel</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A76516</numero>
+    	<nome>João Vieira</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A80424</numero>
+    	<nome>José Carvalho</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A63129</numero>
+    	<nome>José Freitas</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A72187</numero>
+    	<nome>José Lima</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A74036</numero>
+    	<nome>Manuel Monteiro</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A67713</numero>
+    	<nome>Manuel Moreno</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>PG39292</numero>
+    	<nome>Maria Pinto</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>PG41089</numero>
+    	<nome>Miguel Dias</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>PG17918</numero>
+    	<nome>Paulo Martins</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A33524</numero>
+    	<nome>Pedro Paes</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A74264</numero>
+    	<nome>Rafael Silva</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A74568</numero>
+    	<nome>Ricardo Canela</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A75411</numero>
+    	<nome>Ricardo Leal</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A78914</numero>
+    	<nome>Ricardo Martins</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A78764</numero>
+    	<nome>Ricardo Neves</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A77045</numero>
+    	<nome>Ricardo Pereira</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A79947</numero>
+    	<nome>Rui Costa</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A74658</numero>
+    	<nome>Rui Vieira</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A82617</numero>
+    	<nome>Shahzod Yusupov</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A75328</numero>
+    	<nome>Tiago Baptista</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<aluno>
+    	<numero>A61032</numero>
+    	<nome>Tiago Pereira</nome>
+    	<cadeiras>
+    		<cadeira>GCS</cadeira>
+    		<cadeira>PRI</cadeira>
+    	</cadeiras>
+	</aluno>
+	<cadeiras>
+		<cadeira>GCS</cadeira>
+		<cadeira>PRI</cadeira>
+	</cadeiras>
+</turma>
