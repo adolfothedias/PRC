@@ -1,0 +1,7 @@
+select ?title (COUNT(?part) as ?numero_partituras)where {
+    ?id a :obra.
+    ?id :titulo ?title.
+	?inst :utilizado-em ?id.
+    ?inst a :instrumento.
+    ?inst :pasta-partitura ?part
+} group by ?title

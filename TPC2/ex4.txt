@@ -1,0 +1,7 @@
+select ?title where {
+    ?id a :obra.
+    ?id :titulo ?title.
+	?inst :utilizado-em ?id.
+    ?inst a :instrumento.
+    ?inst :designacao "Bombo"
+}

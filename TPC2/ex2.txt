@@ -1,0 +1,5 @@
+select ?title where {
+    ?id a :obra.
+    ?id :tipo "Marcha de Desfile".
+    ?id :titulo ?title.
+} order by ?title

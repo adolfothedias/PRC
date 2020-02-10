@@ -1,0 +1,4 @@
+select ?comp where {
+    ?id a :obra.
+    ?id :compositor ?comp.
+} order by ?comp
