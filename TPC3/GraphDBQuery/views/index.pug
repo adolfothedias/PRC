@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  .w3-container.w3-blue-grey
+    h1 GraphDB Query
+  .w3-container.w3-blue-grey
+    p
+      b Choose the repository
+  .w3-container
+    form(method='POST' action='/')
+      table
+        each elem in repositories.results.bindings
+          tr
+            td
+              p= elem.title.value
+            td
+              input(type="radio" id="repository" name="repository" value=elem.title.value)
+    p
+      b Type your query:
+    input(type="text" id="query" name="query" size="30" style="margin-right:10px;")      
+    button.w3-button.w3-blue-grey(type='submit' id="send") Enviar
+  .w3-container.w3-blue-grey
+    h3 
+      b Results
+    button.w3-button.w3-blue-grey(id="clear") Limpar
+  .w3-container(id="table-wrapper" style="margin:5px;")
+    container(id="table" style="overflow:auto;height=150px;")
+          
+          
+
+
+
+
+
+
+
+
+        
