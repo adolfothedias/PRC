@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .w3-container.w3-blue-grey
+    h1= id
+    p= 'Título:' + info.titulo
+    p= 'Tipo' + info.tipo
+  .w3-container.w3-blue-grey
+    a(href="http://localhost:3000/")
+      button.w3-button.w3-blue-grey Voltar à Lista
+  .w3-container
+    h1.w3-blue-grey Partituras
+    table.w3-table
+      tr.w3-blue-grey
+        th Identificador
+        th Instrumento
+        th Voz
+        th Clave
+        th Path
+      each elem in parts
+        tr
+          td= elem.id
+          td= elem.inst
+          td= elem.voz
+          td= elem.clave
+          td= elem.path

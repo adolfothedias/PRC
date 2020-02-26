@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRC2019-A82324-T4</keyname>
+        <title>Arquivo Musical</title>
+        <bdate>24-02-2020</bdate>
+        <edate>02-03-2020</edate>
+        <supervisor>
+            <name>José Carlos Leite Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A82324</identifier>
+            <name>Carlos Miguel Lopes Sá Barbosa</name>
+            <email>a82324@alunos.uminho.pt</email>
+            <photo path="photo.png"/>
+        </member>
+    </workteam>
+    <abstract>
+       	<p>Este TPC tem como objetivo fazer uma aplicação onde o utilizador pode ver as obras que se encontram no Arquivo Musical, bem como alguma informação extra. Encontra-se na porta 3000.</p> 
+    </abstract>
+    <deliverables>
+        <deliverable path="ArquivoMusical/views/index.pug">index.pug</deliverable>	
+	<deliverable path="ArquivoMusical/views/single.pug">single.pug</deliverable>
+        <deliverable path="ArquivoMusical/routes/index.js">index.js</deliverable>
+    </deliverables>
+</pr>

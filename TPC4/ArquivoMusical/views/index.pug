@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Arquivo de Músicas
+  .w3-container
+    table.w3-table
+      tr.w3-blue-grey
+        th Identificador
+        th Título
+        th Número de Partituras
+      each elem in obras
+        tr
+          td= elem.id
+          td= elem.titulo
+          td= elem.count
+          td 
+            a(href="http://localhost:3000/" + elem.id)
+              button.w3-button.w3-blue-grey Ver Detalhes
