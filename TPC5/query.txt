@@ -1,0 +1,18 @@
+select distinct ?swim (SAMPLE(?nme) as ?name) ?gender ?bdate ?bplace ?ddate ?abstract where{
+   ?swim a dbo:Swimmer.
+   ?swim foaf:name ?nme.
+   ?swim foaf:gender ?gender.
+   ?swim dbp:birthDate ?bdate.
+   optional {
+       ?swim dbo:birthPlace ?bp.
+       ?bp rdfs:label ?bplace.
+       filter langMatches(lang(?bplace),'en')
+   }
+    optional{
+       ?swim dbp:deathDate ?ddate.
+    }
+    optional{
+       ?swim dbo:abstract ?abstract.
+       filter langMatches(lang(?abstract),'en')
+   }
+}
