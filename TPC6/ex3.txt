@@ -1,0 +1,41 @@
+//a)
+select (count(distinct ?country) as ?contagem) where {
+    ?a dbo:nationality ?country.
+    ?country a dbo:Country.
+    filter not exists{
+        ?country dbo:dissolutionYear ?d.
+    }
+    filter not exists{
+        ?country dbo:governmentType dbr:Colonialism.
+    }
+}
+
+
+//b)
+select (count(?a) as ?contagem) where{
+    ?a a dbo:Person.
+    ?a dbo:birthPlace ?e.
+    ?e dbo:country ?f.
+    ?f dbo:longName "Barbados"@en
+}
+
+//c)
+select sample(?name) where{
+    ?a a dbo:Person.
+    ?a dbo:birthPlace ?e.
+    ?e dbo:country ?f.
+    ?f dbo:longName "Barbados"@en.
+    ?a rdf:type dbo:Cricketer.
+    ?a foaf:name ?name
+} group by ?a
+
+//d)
+select (count(distinct ?a) as ?contagem) where{
+    ?a a dbo:Film.
+}
+
+//e)
+select ?a where{
+    ?a dbo:starring ?c.
+    ?c foaf:name "Christopher Lambert"@en
+}

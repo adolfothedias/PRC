@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRC2019-A82324-T6</keyname>
+        <title>Ficha da Primeira Semana com Universidade em Quarentena</title>
+        <bdate>09-03-2020</bdate>
+        <edate>16-03-2020</edate>
+        <supervisor>
+            <name>José Carlos Leite Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A82324</identifier>
+            <name>Carlos Miguel Lopes Sá Barbosa</name>
+            <email>a82324@alunos.uminho.pt</email>
+            <photo path="photo.png"/>
+        </member>
+    </workteam>
+    <abstract>
+       	<p>Este TPC tem como objetivo realizar um conjunto de 4 exercícios que se encontram nos ficheiros presentes no deliverables.</p> 
+    </abstract>
+    <deliverables>
+        <deliverable path="ex1.png">ex1.png</deliverable>
+	<deliverable path="ex2.ttl">ex2.ttl</deliverable>
+	<deliverable path="ex2.txt">ex2.txt</deliverable>
+	<deliverable path="ex3.txt">ex3.txt</deliverable>
+	<deliverable path="ex4.txt">ex4.txt</deliverable>	
+    </deliverables>
+</pr>

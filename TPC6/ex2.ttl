@@ -1,0 +1,260 @@
+@prefix : <http://www.semanticweb.org/carlos/ontologies/2020/ex2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/carlos/ontologies/2020/ex2> .
+
+<http://www.semanticweb.org/carlos/ontologies/2020/ex2> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#compra
+:compra rdf:type owl:ObjectProperty ;
+        owl:inverseOf :éCompradoPor ;
+        rdfs:domain :Cliente ;
+        rdfs:range :Produto .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#vende
+:vende rdf:type owl:ObjectProperty ;
+       owl:inverseOf :éVendidoPor ;
+       rdfs:domain :Loja ;
+       rdfs:range :Produto .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#éCompradoPor
+:éCompradoPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#éVendidoPor
+:éVendidoPor rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#codigo
+:codigo rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#email
+:email rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#Cliente
+:Cliente rdf:type owl:Class ;
+         rdfs:subClassOf :CompraVenda ;
+         owl:disjointWith :Produto .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#CompraVenda
+:CompraVenda rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#Loja
+:Loja rdf:type owl:Class ;
+      rdfs:subClassOf :CompraVenda .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#Produto
+:Produto rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#cl_a
+:cl_a rdf:type owl:NamedIndividual ,
+               :Cliente ,
+               :CompraVenda ;
+      :compra :prod_a ,
+              :prod_b ;
+      :email "antonio@email.com"^^xsd:string ;
+      :nome "António"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#cl_b
+:cl_b rdf:type owl:NamedIndividual ,
+               :Cliente ,
+               :CompraVenda ;
+      :compra :prod_c ,
+              :prod_d ;
+      :email "bruno@email.com"^^xsd:string ;
+      :nome "Bruno"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#cl_c
+:cl_c rdf:type owl:NamedIndividual ,
+               :Cliente ,
+               :CompraVenda ;
+      :compra :prod_e ,
+              :prod_f ;
+      :email "carlos@email.com"^^xsd:string ;
+      :nome "Carlos"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#cl_d
+:cl_d rdf:type owl:NamedIndividual ,
+               :Cliente ,
+               :CompraVenda ;
+      :compra :prod_g ,
+              :prod_h ;
+      :email "diogo@email.com"^^xsd:string ;
+      :nome "Diogo"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#cl_e
+:cl_e rdf:type owl:NamedIndividual ,
+               :Cliente ,
+               :CompraVenda ;
+      :compra :prod_i ,
+              :prod_j ;
+      :email "eduardo@email.com"^^xsd:string ;
+      :nome "Eduardo"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#cont
+:cont rdf:type owl:NamedIndividual ,
+               :CompraVenda ,
+               :Loja ;
+      :vende :prod_a ,
+             :prod_b ;
+      :email "continente@email.com"^^xsd:string ;
+      :nome "Continente"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#ele
+:ele rdf:type owl:NamedIndividual ,
+              :CompraVenda ,
+              :Loja ;
+     :vende :prod_c ,
+            :prod_d ;
+     :email "eleclerc@email.com"^^xsd:string ;
+     :nome "Eleclerc"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#mp
+:mp rdf:type owl:NamedIndividual ,
+             :CompraVenda ,
+             :Loja ;
+    :vende :prod_e ,
+           :prod_f ;
+    :email "minipreco@email.com"^^xsd:string ;
+    :nome "Mini Preço"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#pd
+:pd rdf:type owl:NamedIndividual ,
+             :CompraVenda ,
+             :Loja ;
+    :vende :prod_g ,
+           :prod_h ;
+    :email "pingodoce@email.com"^^xsd:string ;
+    :nome "Pingo Doce"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_a
+:prod_a rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_a ;
+        :éVendidoPor :cont ;
+        :codigo "a"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_b
+:prod_b rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_a ;
+        :éVendidoPor :cont ;
+        :codigo "b"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_c
+:prod_c rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_b ;
+        :éVendidoPor :ele ;
+        :codigo "c"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_d
+:prod_d rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_b ;
+        :éVendidoPor :ele ;
+        :codigo "d"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_e
+:prod_e rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_c ;
+        :éVendidoPor :mp ;
+        :codigo "e"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_f
+:prod_f rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_c ;
+        :éVendidoPor :mp ;
+        :codigo "f"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_g
+:prod_g rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_d ;
+        :éVendidoPor :pd ;
+        :codigo "g"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_h
+:prod_h rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_d ;
+        :éVendidoPor :pd ;
+        :codigo "h"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_i
+:prod_i rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_e ;
+        :éVendidoPor :sm ;
+        :codigo "i"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#prod_j
+:prod_j rdf:type owl:NamedIndividual ,
+                 :Produto ;
+        :éCompradoPor :cl_e ;
+        :éVendidoPor :sm ;
+        :codigo "j"^^xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/ex2#sm
+:sm rdf:type owl:NamedIndividual ,
+             :CompraVenda ,
+             :Loja ;
+    :vende :prod_i ,
+           :prod_j ;
+    :email "sinalmagico@email.com"^^xsd:string ;
+    :nome "Sinal Mágico"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

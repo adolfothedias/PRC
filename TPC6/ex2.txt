@@ -1,0 +1,26 @@
+//a)
+PREFIX : <http://www.semanticweb.org/carlos/ontologies/2020/ex2#>
+select * where {
+    ?a a :Produto.
+    ?a :codigo "a"
+}
+
+//b)
+PREFIX : <http://www.semanticweb.org/carlos/ontologies/2020/ex2#>
+select ?b where {
+    ?a a :Cliente.
+    ?a :nome "António".
+    ?b a :Produto.
+    ?a :compra ?b
+}
+
+//c)
+PREFIX : <http://www.semanticweb.org/carlos/ontologies/2020/ex2#>
+select ?c where {
+    ?a a :Loja.
+    ?b a :Produto.
+    ?c a :Cliente.
+    ?a :nome "Continente".
+    ?a :vende ?b.
+    ?c :compra ?b
+} group by ?c

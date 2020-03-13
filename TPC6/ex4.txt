@@ -1,0 +1,54 @@
+//ex 1
+PREFIX : <http://www.chalkos.net/ontologies/2015/pokemon#>
+PREFIX pokemon: <http://www.chalkos.net/ontologies/2015/pokemon#>
+select ?a ?name ?number (group_concat(distinct ?type;separator=", ") as ?types)where { 
+	?a a :Pokemon.
+    ?a pokemon:Name ?name.
+    filter langMatches(lang(?name),'en').
+    ?a pokemon:Number ?number.
+    ?a pokemon:HasType ?t.
+    ?t pokemon:Name ?type.
+} group by ?a ?name ?number
+
+//ex 2
+PREFIX : <http://www.chalkos.net/ontologies/2015/pokemon#>
+PREFIX pokemon: <http://www.chalkos.net/ontologies/2015/pokemon#>
+select (count(?a) as ?number)where { 
+	?a a :Pokemon.
+} 
+
+//ex 3
+PREFIX pokemon: <http://www.chalkos.net/ontologies/2015/pokemon#>
+PREFIX : <http://www.chalkos.net/ontologies/2015/pokemon#>
+select * where { 
+	?a a :Pokemon.
+    ?a pokemon:Number 5.
+    ?a pokemon:EvolvesFrom+ ?s .
+    ?s pokemon:EvolvesTo+ ?d.
+} 
+
+//ex 4
+PREFIX pokemon: <http://www.chalkos.net/ontologies/2015/pokemon#>
+PREFIX : <http://www.chalkos.net/ontologies/2015/pokemon#>
+select * where { 
+	?a a :Pokemon.
+    ?a pokemon:Number 5.
+    ?a pokemon:EvolvesFrom+ ?s .
+    ?s pokemon:EvolvesTo+ ?d.
+    ?d pokemon:Name "Eevee".
+} 
+
+//ex 5
+PREFIX pokemon: <http://www.chalkos.net/ontologies/2015/pokemon#>
+PREFIX : <http://www.chalkos.net/ontologies/2015/pokemon#>
+select (count(?a) as ?count) where {
+    ?a a pokemon:PokeType
+} 
+
+//ex 6
+PREFIX pokemon: <http://www.chalkos.net/ontologies/2015/pokemon#>
+PREFIX : <http://www.chalkos.net/ontologies/2015/pokemon#>
+select ?typ (count(?a) as ?count) where {
+    ?a a :Pokemon.
+    ?a pokemon:HasType+ ?typ
+} group by ?typ order by ?typ
