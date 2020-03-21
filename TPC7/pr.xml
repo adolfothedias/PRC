@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRC2019-A82324-T7</keyname>
+        <title>Povoamento da Ontologia da segunda semana com Universidade em Quarentena</title>
+        <bdate>16-03-2020</bdate>
+        <edate>23-03-2020</edate>
+        <supervisor>
+            <name>José Carlos Leite Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A82324</identifier>
+            <name>Carlos Miguel Lopes Sá Barbosa</name>
+            <email>a82324@alunos.uminho.pt</email>
+            <photo path="photo.png"/>
+        </member>
+    </workteam>
+    <abstract>
+       	<p>Este TPC tem como objetivo povoar uma ontologia acerca de filmes. Neste caso, só foram feitos os povoamentos dos atores, compositores,relizadores, países, linguas e filmes.</p> 
+    </abstract>
+    <deliverables>
+        <deliverable path="parseJSON.js">parseJSON.js</deliverable>
+	<deliverable path="aula6.ttl">aula6.ttl</deliverable>
+    </deliverables>
+</pr>

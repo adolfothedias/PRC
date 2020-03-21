@@ -1,0 +1,584 @@
+@prefix : <http://www.semanticweb.org/carlos/ontologies/2020/2/aula6#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/carlos/ontologies/2020/2/aula6> .
+
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula6> rdf:type owl:Ontology ;
+                                                             rdfs:comment "Ontologia sobre cinema feita na aula." .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#atuou
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#atuou> rdf:type owl:ObjectProperty ;
+                                                                  owl:inverseOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temAtor> ;
+                                                                  rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                  rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#compos
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#compos> rdf:type owl:ObjectProperty ;
+                                                                   owl:inverseOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#foiComposta> ;
+                                                                   rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                   rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Peca_Musical> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ePersonagem
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ePersonagem> rdf:type owl:ObjectProperty ;
+                                                                        owl:inverseOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPersonagem> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#escreveu
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#escreveu> rdf:type owl:ObjectProperty ;
+                                                                     owl:inverseOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#foiEscrito> ;
+                                                                     rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                     rdfs:range [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Argumento>
+                                                                                                <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Livro>
+                                                                                              )
+                                                                                ] .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#foiComposta
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#foiComposta> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Peca_Musical> ;
+                                                                        rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#foiEscrito
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#foiEscrito> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain [ rdf:type owl:Class ;
+                                                                                     owl:unionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Argumento>
+                                                                                                   <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Livro>
+                                                                                                 )
+                                                                                   ] ;
+                                                                       rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#realizou
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#realizou> rdf:type owl:ObjectProperty ;
+                                                                     owl:inverseOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temRealizador> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#representa
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#representa> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> ;
+                                                                       rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Personagem> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temArgumento
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temArgumento> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ;
+                                                                         rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Argumento> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temAtor
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temAtor> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ;
+                                                                    rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temGénero
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temGénero> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ;
+                                                                      rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temLíngua
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temLíngua> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ;
+                                                                      rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Língua> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPaísOrigem
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPaísOrigem> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ;
+                                                                          rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#País> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPersonagem
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPersonagem> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ;
+                                                                          rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Personagem> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPeçaMusical
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPeçaMusical> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ;
+                                                                           rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Peca_Musical> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temRealizador
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temRealizador> rdf:type owl:ObjectProperty ,
+                                                                                   owl:FunctionalProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ;
+                                                                          rdfs:range <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#dataLançamento
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#dataLançamento> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#duração
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#duração> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#titulo
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#titulo> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Argumento
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Argumento> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Obra> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> rdf:type owl:Class ;
+                                                                 owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa>
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#atuou> ;
+                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme>
+                                                                                                            ]
+                                                                                                          ) ;
+                                                                                       rdf:type owl:Class
+                                                                                     ] ;
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorFeminino
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorFeminino> rdf:type owl:Class ;
+                                                                         owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator>
+                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                      owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> ;
+                                                                                                                      owl:hasValue "F"
+                                                                                                                    ]
+                                                                                                                  ) ;
+                                                                                               rdf:type owl:Class
+                                                                                             ] ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorMasculino
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorMasculino> rdf:type owl:Class ;
+                                                                          owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator>
+                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> ;
+                                                                                                                       owl:hasValue "M"
+                                                                                                                     ]
+                                                                                                                   ) ;
+                                                                                                rdf:type owl:Class
+                                                                                              ] ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Compositor
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Compositor> rdf:type owl:Class ;
+                                                                       owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa>
+                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#compos> ;
+                                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Peca_Musical>
+                                                                                                                  ]
+                                                                                                                ) ;
+                                                                                             rdf:type owl:Class
+                                                                                           ] ;
+                                                                       rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Escritor
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Escritor> rdf:type owl:Class ;
+                                                                     owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa>
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#escreveu> ;
+                                                                                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                       owl:unionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Argumento>
+                                                                                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Livro>
+                                                                                                                                                   )
+                                                                                                                                     ]
+                                                                                                                ]
+                                                                                                              ) ;
+                                                                                           rdf:type owl:Class
+                                                                                         ] ;
+                                                                     rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeAmericano
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeAmericano> rdf:type owl:Class ;
+                                                                           owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme>
+                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                        owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPaísOrigem> ;
+                                                                                                                        owl:hasValue <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Estados_Unidos>
+                                                                                                                      ]
+                                                                                                                    ) ;
+                                                                                                 rdf:type owl:Class
+                                                                                               ] ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeAventura
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeAventura> rdf:type owl:Class ;
+                                                                          owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme>
+                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temGénero> ;
+                                                                                                                       owl:hasValue <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Aventura>
+                                                                                                                     ]
+                                                                                                                   ) ;
+                                                                                                rdf:type owl:Class
+                                                                                              ] ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeDramático
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeDramático> rdf:type owl:Class ;
+                                                                           owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme>
+                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                        owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temGénero> ;
+                                                                                                                        owl:hasValue <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Drama>
+                                                                                                                      ]
+                                                                                                                    ) ;
+                                                                                                 rdf:type owl:Class
+                                                                                               ] ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeInfantil
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeInfantil> rdf:type owl:Class ;
+                                                                          owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme>
+                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temGénero> ;
+                                                                                                                       owl:hasValue <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Infantil>
+                                                                                                                     ]
+                                                                                                                   ) ;
+                                                                                                rdf:type owl:Class
+                                                                                              ] ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeRomântico
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeRomântico> rdf:type owl:Class ;
+                                                                           owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme>
+                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                        owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temGénero> ;
+                                                                                                                        owl:hasValue <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Romance>
+                                                                                                                      ]
+                                                                                                                    ) ;
+                                                                                                 rdf:type owl:Class
+                                                                                               ] ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> rdf:type owl:Class ;
+                                                                   owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                         owl:oneOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Aventura>
+                                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ação>
+                                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Comédia>
+                                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Drama>
+                                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ficção>
+                                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Infantil>
+                                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Romance>
+                                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Terror>
+                                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Thriller>
+                                                                                                   )
+                                                                                       ] .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Livro
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Livro> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Obra> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Língua
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Língua> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Obra
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Obra> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#País
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#País> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Peca_Musical
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Peca_Musical> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Obra> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Personagem
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Personagem> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Realizador
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Realizador> rdf:type owl:Class ;
+                                                                       owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa>
+                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#realizou> ;
+                                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme>
+                                                                                                                  ]
+                                                                                                                ) ;
+                                                                                             rdf:type owl:Class
+                                                                                           ] ;
+                                                                       rdfs:subClassOf <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Alex
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Alex> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Personagem> ;
+                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ePersonagem> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Madagascar2> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ArgumentoTwillight
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ArgumentoTwillight> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Argumento> ,
+                                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Obra> ;
+                                                                               <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#foiEscrito> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Melissa_Rosenberg> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Aventura
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Aventura> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ação
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ação> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ben_Stiller
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ben_Stiller> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorMasculino> ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#representa> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Alex> ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> "M" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Billy_Burke
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Billy_Burke> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorMasculino> ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#atuou> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Twillight> ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> "M" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Catherine_Hardwicke
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Catherine_Hardwicke> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ,
+                                                                                         <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Realizador> ;
+                                                                                <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#realizou> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Twillight> ;
+                                                                                <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> "F" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Chris_Rock
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Chris_Rock> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> ,
+                                                                                <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorMasculino> ,
+                                                                                <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                       <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#representa> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Marty> ;
+                                                                       <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> "M" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Comédia
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Comédia> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Drama
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Drama> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Estados_Unidos
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Estados_Unidos> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#País> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ficção
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ficção> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Francês
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Francês> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Língua> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#França
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#França> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#País> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Gloria
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Gloria> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Personagem> ;
+                                                                   <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ePersonagem> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Madagascar2> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Infantil
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Infantil> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Inglaterra
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Inglaterra> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#País> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Inglês
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Inglês> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Língua> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Kristen_Stewart
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Kristen_Stewart> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> ,
+                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorFeminino> ,
+                                                                                     <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#atuou> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Twillight> ;
+                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> "F" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Madagascar2
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Madagascar2> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeAmericano> ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeAventura> ,
+                                                                                 <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeInfantil> ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temGénero> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Aventura> ,
+                                                                                                                                              <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Infantil> ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPaísOrigem> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Estados_Unidos> ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPersonagem> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Alex> ,
+                                                                                                                                                  <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Gloria> ,
+                                                                                                                                                  <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Marty> ,
+                                                                                                                                                  <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Melman> ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#dataLançamento> "2008-11-27" ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#duração> 89 ;
+                                                                        <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#titulo> "Madagascar: Escape 2 Africa" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Marty
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Marty> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Personagem> ;
+                                                                  <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ePersonagem> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Madagascar2> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Melissa_Rosenberg
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Melissa_Rosenberg> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Escritor> ,
+                                                                                       <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                              <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#escreveu> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ArgumentoTwillight> ;
+                                                                              <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> "F" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Melman
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Melman> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Personagem> ;
+                                                                   <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ePersonagem> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Madagascar2> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Portugal
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Portugal> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#País> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Português
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Português> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Língua> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Robert_Pattinson
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Robert_Pattinson> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> ,
+                                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorMasculino> ,
+                                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                             <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#atuou> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Twillight> ;
+                                                                             <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> "M" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Romance
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Romance> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Sarah_Clarke
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Sarah_Clarke> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> ,
+                                                                                  <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorFeminino> ,
+                                                                                  <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                         <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#atuou> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Twillight> ;
+                                                                         <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> "F" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Taylor_Lauren
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Taylor_Lauren> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Ator> ,
+                                                                                   <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#AtorMasculino> ,
+                                                                                   <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Pessoa> ;
+                                                                          <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#atuou> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Twillight> ;
+                                                                          <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#sexo> "M" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Terror
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Terror> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Thriller
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Thriller> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Genero> .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Twillight
+<http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Twillight> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FIlme> ,
+                                                                               <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeAmericano> ,
+                                                                               <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeDramático> ,
+                                                                               <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#FilmeRomântico> ;
+                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temArgumento> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#ArgumentoTwillight> ;
+                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temAtor> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Billy_Burke> ,
+                                                                                                                                          <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Kristen_Stewart> ,
+                                                                                                                                          <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Robert_Pattinson> ,
+                                                                                                                                          <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Sarah_Clarke> ,
+                                                                                                                                          <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Taylor_Lauren> ;
+                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temGénero> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Drama> ,
+                                                                                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Romance> ,
+                                                                                                                                            <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Thriller> ;
+                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temPaísOrigem> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Estados_Unidos> ;
+                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#temRealizador> <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#Catherine_Hardwicke> ;
+                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#dataLançamento> "2008-12-04" ;
+                                                                      <http://www.semanticweb.org/carlos/ontologies/2020/2/aula7#duração> 122 .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
