@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRC2019-A82324-T8</keyname>
+        <title>Aplicação em ExpressJS sobre a ontologia de Cinema</title>
+        <bdate>23-03-2020</bdate>
+        <edate>30-03-2020</edate>
+        <supervisor>
+            <name>José Carlos Leite Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A82324</identifier>
+            <name>Carlos Miguel Lopes Sá Barbosa</name>
+            <email>a82324@alunos.uminho.pt</email>
+            <photo path="photo.png"/>
+        </member>
+    </workteam>
+    <abstract>
+       	<p>Este TPC tem como objetivo fazer uma aplicação em Express para responder às rotas acerca dos filmes, personagens e atores.</p> 
+    </abstract>
+    <deliverables>
+        <deliverable path="cinemateca">diretoria</deliverable>
+    </deliverables>
+</pr>
