@@ -1,0 +1,56 @@
+Tios:
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?uncle ?parent ?nephew where { 
+	?nephew :hasParent ?parent .
+    ?parent :hasSibling ?uncle .
+    ?uncle :sex 'M'.
+}
+
+Primos:
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?cousin ?uncle ?parent ?person where { 
+	?person :hasParent ?parent .
+    ?parent :hasSibling ?uncle .
+    ?uncle :hasChild ?cousin.
+    ?cousin :sex 'M'.
+}
+
+Ancestrais (para o individuo 'I13'):
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?parent ?person where { 
+	:I13 :hasParent+ ?parent
+}
+
+Descendentes (para o individuo 'I4'):
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?child ?person where { 
+	:I4 :hasChild+ ?child
+}
+
+Cunhados
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?person ?child ?otherparent ?inLaw where { 
+	?person :hasChild ?child.
+    ?otherparent :hasChild ?child.
+    ?person :sex ?fstSex.
+    BIND (IF(?fstSex = 'M','F','M') AS ?sndSex)
+    ?otherparent :sex ?sndSex.
+    ?otherparent :hasSibling ?inLaw.
+}
+
+Sogros/as
+
+PREFIX : <http://www.di.uminho.pt/prc2020/familyTree#>
+select ?person ?child ?otherparent ?inLaw where { 
+	?person :hasChild ?child.
+    ?otherparent :hasChild ?child.
+    ?person :sex ?fstSex.
+    BIND (IF(?fstSex = 'M','F','M') AS ?sndSex)
+    ?otherparent :sex ?sndSex.
+    ?otherparent :hasParent ?inLaw.
+}
